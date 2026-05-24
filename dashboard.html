@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
- 
+
 <aside class="sidebar">
     <div class="sidebar-brand">
         <h1>WaterWise</h1>
         <p>Household Water Tracker</p>
     </div>
- 
+
     <nav class="sidebar-nav">
         <div class="nav-section-label">Main</div>
         <a href="#" class="nav-link active">
@@ -42,7 +42,7 @@
             </svg>
             Rooms
         </a>
- 
+
         <div class="nav-section-label">Account</div>
         <a href="#" class="nav-link">
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -57,9 +57,23 @@
             </svg>
             Settings
         </a>
+        <a href="#" class="nav-link">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="16" height="16">
+                <text x="12" y="17" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial, Helvetica, sans-serif" stroke="none" fill="currentColor">?</text>
+            </svg>
+            FAQ
+        </a>
     </nav>
- 
+
     <div class="sidebar-user">
+        <a href="login.html" class="nav-link signout-link">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/>
+                <polyline points="16 17 21 12 16 7"/>
+                <line x1="21" y1="12" x2="9" y2="12"/>
+            </svg>
+            Sign Out
+        </a>
         <div class="user-card">
             <div class="avatar">JD</div>
             <div class="user-info">
@@ -69,21 +83,22 @@
         </div>
     </div>
 </aside>
- 
+
 <main class="main">
- 
+
+    <!-- Topbar -->
     <div class="topbar">
         <div>
             <h2>Good morning, John</h2>
             <p>Here's your water usage overview for today.</p>
         </div>
         <div class="topbar-right">
-            <div class="date-pill">Thursday, XX MONTH YEAR</div>
+            <div class="date-pill">Thursday, 28 May 2026</div>
         </div>
     </div>
- 
+
     <div class="liquid-grid">
- 
+
         <div class="card stat-card">
             <div class="stat-icon icon-blue">
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -94,7 +109,7 @@
             <div class="stat-label">Today's Usage</div>
             <div class="stat-badge badge-green">↓ 12% vs yesterday</div>
         </div>
- 
+
         <div class="card stat-card">
             <div class="stat-icon icon-teal">
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -107,7 +122,7 @@
             <div class="stat-label">This Month</div>
             <div class="stat-badge badge-yellow">↑ 3% vs last month</div>
         </div>
- 
+
         <div class="card stat-card">
             <div class="stat-icon icon-amber">
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -119,7 +134,7 @@
             <div class="stat-label">Est. Cost Today</div>
             <div class="stat-badge badge-green">Avg $2.80/day</div>
         </div>
- 
+
         <div class="card chart-card">
             <div class="card-title">Weekly Usage</div>
             <div class="card-sub">Litres per day — this week vs last week</div>
@@ -168,7 +183,7 @@
                     <div class="legend-dot" style="background:#b8e8fc;"></div> Last week
                 </div>
             </div>
- 
+
             <div class="sparkline-wrap">
                 <div class="card-title">Monthly Trend</div>
                 <div class="card-sub">Litres used — Jan to May</div>
@@ -235,13 +250,13 @@
                 </div>
             </div>
         </div>
- 
+
         <div class="card tips-card">
             <div class="card-title">Saving Tips</div>
             <div class="card-sub">Personalised for your usage</div>
             <div class="tip-item">
                 <div class="tip-dot"></div>
-                Fix the leaking tap — it wastes ~20 L per day.
+                Leaking kitchen tap wastes up to 20L per day.
             </div>
             <div class="tip-item">
                 <div class="tip-dot" style="background:#0d9488;"></div>
@@ -256,7 +271,7 @@
                 Use a 4-minute shower timer to cut bathroom usage by 18 L.
             </div>
         </div>
- 
+
         <div class="card goal-card">
             <div class="goal-ring">
                 <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
@@ -291,11 +306,11 @@
                 <button>Adjust Goal</button>
             </div>
         </div>
- 
+
         <div class="card alerts-card">
             <div class="card-title">Recent Alerts</div>
             <div class="card-sub">Unusual activity detected</div>
- 
+
             <div class="alert-item">
                 <div class="alert-icon" style="background:#fee2e2;color:#dc2626;">
                     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -308,7 +323,7 @@
                 </div>
                 <div class="alert-badge" style="background:#fee2e2;color:#991b1b;">High</div>
             </div>
- 
+
             <div class="alert-item">
                 <div class="alert-icon" style="background:#fef3c7;color:#d97706;">
                     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -322,7 +337,7 @@
                 </div>
                 <div class="alert-badge" style="background:#fef3c7;color:#92400e;">Medium</div>
             </div>
- 
+
             <div class="alert-item">
                 <div class="alert-icon" style="background:#ccfbf1;color:#0d9488;">
                     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -335,7 +350,7 @@
                 </div>
                 <div class="alert-badge" style="background:#ccfbf1;color:#065f46;">Info</div>
             </div>
- 
+
             <div class="alert-item">
                 <div class="alert-icon" style="background:#dff6ff;color:#0077b6;">
                     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -349,9 +364,9 @@
                 <div class="alert-badge" style="background:#d1fae5;color:#065f46;">Good</div>
             </div>
         </div>
- 
+
     </div>
 </main>
- 
+
 </body>
 </html>
