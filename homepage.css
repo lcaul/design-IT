@@ -1,0 +1,317 @@
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    background: #f4fbff;
+    color: #222;
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+nav{
+    background: white;
+
+    padding: 18px 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav h1{
+    color: #0077b6;
+    font-size: 30px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+
+    font-weight: bold;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    background: #dff6ff;
+    color: #0077b6;
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero{
+    min-height: 500px;
+
+    background: linear-gradient(to right, #dff6ff, #b8e8fc);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    padding: 60px 40px;
+}
+
+.hero-text{
+    max-width: 560px;
+}
+
+.hero h2{
+    font-size: 52px;
+    color: #023e8a;
+
+    margin-bottom: 18px;
+
+    line-height: 1.1;
+}
+
+.hero p{
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #333;
+
+    margin-bottom: 28px;
+}
+
+.hero button{
+    padding: 13px 30px;
+
+    background: #0077b6;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.hero button:hover{
+    background: #023e8a;
+
+    transform: scale(1.05);
+}
+
+.hero-image{
+    background: white;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+.drop{
+    font-size: 80px;
+}
+
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
+.cards{
+    padding: 60px 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+
+    width: 290px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 26px rgba(0,0,0,0.14);
+}
+
+.card h3{
+    color: #0077b6;
+
+    margin-bottom: 14px;
+
+    font-size: 24px;
+}
+
+.card p{
+    color: #555;
+
+    line-height: 1.6;
+}
+
+/* ========================= */
+/* STATS */
+/* ========================= */
+
+.stats{
+    background: white;
+
+    padding: 50px 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+
+    text-align: center;
+
+    flex-wrap: wrap;
+}
+
+.stat-box h2{
+    color: #0077b6;
+
+    font-size: 34px;
+}
+
+.stat-box p{
+    color: #555;
+
+    margin-top: 8px;
+}
+
+/* ========================= */
+/* ABOUT */
+/* ========================= */
+
+.about{
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.about h2{
+    color: #023e8a;
+
+    font-size: 34px;
+
+    margin-bottom: 18px;
+}
+
+.about p{
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #555;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+    background: #023e8a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width: 850px){
+
+    nav{
+        padding: 18px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .hero{
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 50px 25px;
+
+        gap: 35px;
+    }
+
+    .hero h2{
+        font-size: 38px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .hero-image{
+        width: 150px;
+        height: 150px;
+    }
+
+    .drop{
+        font-size: 65px;
+    }
+
+    .stats{
+        gap: 35px;
+    }
+}
